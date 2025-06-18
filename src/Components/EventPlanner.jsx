@@ -2,6 +2,9 @@ import React from 'react';
 import './EventPlanner.css'; // Import CSS file for styling
 import Footer from './Footer';
 import ContactSection from './ContactSection';
+import TestimonialsSection from './TestimonialsSection';
+import FeaturesSection from './FeaturesSection';
+import EventsCategoriesSection from './EventsCategoriesSection';
 
 const EventPlanner = () => {
     return (
@@ -17,73 +20,10 @@ const EventPlanner = () => {
                 <button className='get-started-button'>Get Started</button>
             </section>
 
-            <section className='events_categories'>
-
-                <ul>
-                    <h2>Social Events:</h2>
-                    <li>Birthday parties</li>
-                    <li>Anniversary celebrations</li>
-                    <li>Wedding receptions</li>
-                    <li>Baby showers</li>
-                    <li>Graduation parties</li>
-                    <li>Family reunions</li>
-                </ul>
-
-                <ul>
-                    <h2>Entertainment Events:</h2>
-                    <li>Concerts</li>
-                    <li>Music festivals</li>
-                    <li>Film screenings</li>
-                    <li>Comedy shows</li>
-                    <li>Art exhibitions</li>
-                    <li>Cultural events</li>
-                </ul>
-
-                <ul>
-                    <h2>Community Events:</h2>
-                    <li>Fundraising events</li>
-                    <li>Charity galas</li>
-                    <li>Volunteer drives</li>
-                    <li>Neighborhood block parties</li>
-                    <li>Community festivals</li>
-                    <li>Cultural celebrations</li>
-                </ul>
-
-            </section>
-
-            <section className='features'>
-
-                <h2>Features</h2>
-
-                <ul>
-                    <li>Easy event creation and management</li>
-                    <li>Customizable event templates</li>
-                    <li>Guest list management</li>
-                    <li>Real-time collaboration</li>
-                    <li>Reminders and notifications</li>
-                </ul>
-
-            </section>
-
-            <section className="testimonials">
-
-                <div className="testimonial">
-
-                    <p>&quot;Event Planner made organizing my wedding a breeze. Highly recommended!&quot;</p>
-                    <p className="author">- Emily Johnson</p>
-
-                </div>
-                <div className="testimonial">
-
-                    <p>&quot;I use Event Planner for all my corporate events. It saves me so much time and effort!!&quot;</p>
-                    <p className="author">- John Smith</p>
-
-                </div>
-                
-            </section>
-
+            <EventsCategoriesSection/>
+            <FeaturesSection/>
+            <TestimonialsSection/>
             <ContactSection/>
-
             <Footer/>
 
         </div>
